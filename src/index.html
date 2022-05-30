@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+	<div class="wrapper overflow-hidden">
+		@@include('html/header.html',{})
+		<main>
+			<!-- hero -->
+			<section class="hero">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10 order-1" data-aos="fade-right" 
+							data-aos-delay="300" data-aos-duration="1000">
+							<div class="content">
+								<h1>Live chat support for your customers.</h1>
+								<p>Create custom landing pages with Shades that convert more visitors than any
+									website—no coding required.</p>
+							</div>
+							<form action="#" class="">
+								<div class="subscription-form-1">
+									<input type="email" id="email" name="email" placeholder="Enter your email"
+										class="form-control d-inline-block">
+									<button type="submit" class="btn focus-reset get-start-btn">Get Started</button>
+								</div>
+							</form>
+							<p class="hero__sign-text">Already using Shade?<a href="#">Sign In</a> </p>
+						</div>
+						<div class="offset-xxl-1 col-xx-6 col-lg-5 col-md-8 order-lg-1 order-0"
+							data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+							<div>
+								<img class="w-100" src="@img/l1-hero-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="">
+				
+			</section>
+
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	AOS.init();
+    
+	</script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
