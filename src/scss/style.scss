@@ -869,8 +869,7 @@ a {
     position: relative;
     &.active {
       .circle {
-        left: auto;
-        right: 5px;
+       left: calc(100% - 24px);
         transition: all 0.4s ease;
       }
     }
@@ -1007,9 +1006,25 @@ a {
     }
   }
   .price-period {
+    position: relative;
     &__symbol {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 35px;
+      letter-spacing: -1.2px;
     }
-  }
-  .dynamic-value {
+    h2 {
+      margin-bottom: 0;
+      margin-left: 25px;
+    }
+    span {
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: -1.2px;
+      font-weight: bold;
+    }
   }
 }

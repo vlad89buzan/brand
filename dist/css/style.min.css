@@ -11970,8 +11970,7 @@ a {
   position: relative;
 }
 .pricing__toggle-btn.active .circle {
-  left: auto;
-  right: 5px;
+  left: calc(100% - 24px);
   transition: all 0.4s ease;
 }
 .pricing__toggle-btn .circle {
@@ -12090,4 +12089,26 @@ a {
   background-color: var(--bgcolor5);
   color: var(--font-color2);
   margin-bottom: 7px;
+}
+.pricing .price-period {
+  position: relative;
+}
+.pricing .price-period__symbol {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
+  letter-spacing: -1.2px;
+}
+.pricing .price-period h2, .pricing .price-period .h2 {
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+.pricing .price-period span {
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: -1.2px;
+  font-weight: bold;
 }

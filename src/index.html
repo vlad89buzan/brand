@@ -280,7 +280,7 @@
 						</div>
 						<div class="col-12">
 							<div class="row justify-content-center">
-								<div class="col-xl-4 col-lg-6 col-md-9">
+								<div class="col-xl-4 col-lg-6 col-md-9"  data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">>
 									<div class="pricing__item price">
 										<div class="price__top d-flex align-items-center justify-content-between">
 											<span>Basic</span>
@@ -289,8 +289,8 @@
 										<div class="price__main">
 											<div class="price__period price-period">
 												<span class="price-period__symbol">$</span>
-												<h2 class="dynamic-value"  data-monthly="29"
-													data-yearly="499"></h2>
+												<h2 class="dynamic-value"  data-monthly="19"
+													data-yearly="199"></h2>
 												<span class="dynamic-value" 
 													data-monthly="/month" data-yearly="/year"></span>
 											</div>
@@ -317,7 +317,7 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-9">
+								<div class="col-xl-4 col-lg-6 col-md-9"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"></div>>
 									<div class="pricing__item price pricing__item--popular">
 										<div class="price__top d-flex align-items-center justify-content-between">
 											<span>Pro</span>
@@ -354,7 +354,7 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-9">
+								<div class="col-xl-4 col-lg-6 col-md-9"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000"></div>>
 									<div class="pricing__item price">
 										<div class="price__top d-flex align-items-center justify-content-between">
 											<span>Exp</span>
@@ -363,8 +363,8 @@
 										<div class="price__main">
 											<div class="price__period price-period">
 												<span class="price-period__symbol">$</span>
-												<h2 class="dynamic-value"  data-monthly="29"
-													data-yearly="499"></h2>
+												<h2 class="dynamic-value"  data-monthly="49"
+													data-yearly="999"></h2>
 												<span class="dynamic-value" 
 													data-monthly="/month" data-yearly="/year"></span>
 											</div>
@@ -413,6 +413,7 @@
 		let h2 = document.querySelectorAll('h2.dynamic-value');
 		let span = document.querySelectorAll('span.dynamic-value');
 		let isActive = true;
+		setTextContent()
 		trigger.addEventListener('click', function () {
 			trigger.classList.toggle('active')
 			if (trigger.classList.contains('active')){
@@ -430,12 +431,12 @@
 					span[i].innerHTML = span[i].dataset.monthly;
 				} 
 			} else{
+				for (let i = 0; i < h2.length; i++) {
 					
-				}for (let i = 0; i < h2.length; i++) {
-					console.log('bbb')
 					h2[i].innerHTML = h2[i].dataset.yearly;
 					span[i].innerHTML = span[i].dataset.yearly;
 				} 
+				}
 		}
 	</script>
 	<script>
