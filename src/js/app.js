@@ -4,6 +4,9 @@ flsFunctions.isWebp();
 import bootstrap from 'bootstrap';
 
 import "./modules/menu.js";
+import "./modules/aosInit.js";
+import "./modules/pricing.js";
+
 
 
 
