@@ -4,6 +4,18 @@ const submenuAll = menu.querySelectorAll(".submenu");
 const goBack = menu.querySelector(".menu__mobile-go-back");
 const menuTrigger = document.querySelector(".mobile-menu-trigger");
 const closeMenu = menu.querySelector(".menu__mobile-close");
+const links = document.querySelectorAll(".drop-trigger");
+
+links.forEach((link) =>
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+  })
+);
+console.log(menu.querySelector(".menu__mobile-title").textContent);
+if (menu.querySelector(".menu__mobile-title").textContent == "undefined") {
+  menu.querySelector(".menu__mobile-title").innerHTML = "";
+}
+
 let subMenu;
 let subMenuArray = [];
 let subMenuTextArray = [];
@@ -21,7 +33,6 @@ menuMain.addEventListener("click", (e) => {
   }
   if (e.target.closest(".menu__item-has-children")) {
     const hasChildren = e.target.closest(".menu__item-has-children");
-
     showSubMenu(hasChildren);
   }
 });
@@ -52,6 +63,7 @@ document.querySelector(".menu__overlay").addEventListener("click", () => {
   toggleMenu();
 });
 function toggleMenu() {
+  document.body.classList.toggle("lock");
   menu.classList.toggle("active");
   document.querySelector(".menu__overlay").classList.toggle("active");
 }
